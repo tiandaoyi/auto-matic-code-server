@@ -2,10 +2,6 @@ const Koa = require('koa');
 const http = require('http');
 const https = require('https');
 const app = new Koa();
-// app.listen(7211, () => {
-//   console.log('[Koa] Server is starting at port 7211!');
-// });
-// http.createServer(app.callback()).listen(3000);
 
 app.use(async ctx => {
   const url = ctx.request.url
